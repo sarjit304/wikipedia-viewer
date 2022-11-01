@@ -66,7 +66,7 @@ class App extends Component {
           <a href={key[2]}>
             <div className='searchResult' id={idx}>
               <div className='table'>
-              <div className='thumbnail'><img src={key[3]? key[3]['url']: 'Wikipedia-logo_ka.png'} alt={wikipediaLogo} height='100' width='100'></img></div><br></br>
+              <div className='thumbnail'><img src={key[3]? key[3]['url']: wikipediaLogo} alt='Thumbnail' height='100' width='100'></img></div><br></br>
               <div className='description'>{key[0]} <br></br> <br></br>
               {key[1]} <br></br></div> 
               </div>
