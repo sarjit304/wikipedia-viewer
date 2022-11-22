@@ -31,6 +31,19 @@ class App extends Component {
     }
   }
 
+  componentDidMount = () => {
+    let randomWord = require('random-words');
+    let articleLink = 'https://en.wikipedia.org/wiki/' + randomWord();
+    console.log(articleLink);
+    this.setState({randomArticleLink: articleLink});
+  }
+
+  changeRandomArticleLink = () => {
+    let randomWord = require('random-words');
+    let articleLink = 'https://en.wikipedia.org/wiki/' + randomWord();
+    this.setState({randomArticleLink: articleLink});
+  }
+
   updateState = obj => {
     let newState = [];
     for (let i=0; i<obj.pages.length; i++) {
@@ -55,6 +68,9 @@ class App extends Component {
       <div>
         <div className='main-search-input-wrap'>
           <h1>Search Wiki</h1>
+          <div className='random-article'>
+            <a href={this.state.randomArticleLink} target="_blank" onClick={this.changeRandomArticleLink}>Random Article</a>
+          </div>
           <div className='main-search-input fl-wrap'>
             <div className='main-search-input-item'>
               <input id="userInput" defaultValue="Rainbow"></input>
@@ -63,7 +79,7 @@ class App extends Component {
           </div>
         </div>
         <div className='results-block'>{this.state.newState? this.state.newState.map((key, idx) =>(
-          <a href={key[2]}>
+          <a href={key[2]} target="_blank">
             <div className='searchResult' id={idx}>
               <div className='table'>
                 <div className='thumbnail'><img src={key[3]? key[3]['url']: wikipediaLogo} alt='Thumbnail' height='100' width='100'></img></div>
