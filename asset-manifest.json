@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wikipedia-viewer/static/css/main.e4bffe83.css",
-    "main.js": "/wikipedia-viewer/static/js/main.86506c02.js",
+    "main.css": "/wikipedia-viewer/static/css/main.b5eb8f53.css",
+    "main.js": "/wikipedia-viewer/static/js/main.276bbcf1.js",
     "static/js/787.b0900f6a.chunk.js": "/wikipedia-viewer/static/js/787.b0900f6a.chunk.js",
     "static/media/Wikipedia-logo_ka.png": "/wikipedia-viewer/static/media/Wikipedia-logo_ka.862b1df18a295ce4a14b.png",
     "index.html": "/wikipedia-viewer/index.html",
-    "main.e4bffe83.css.map": "/wikipedia-viewer/static/css/main.e4bffe83.css.map",
-    "main.86506c02.js.map": "/wikipedia-viewer/static/js/main.86506c02.js.map",
+    "main.b5eb8f53.css.map": "/wikipedia-viewer/static/css/main.b5eb8f53.css.map",
+    "main.276bbcf1.js.map": "/wikipedia-viewer/static/js/main.276bbcf1.js.map",
     "787.b0900f6a.chunk.js.map": "/wikipedia-viewer/static/js/787.b0900f6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4bffe83.css",
-    "static/js/main.86506c02.js"
+    "static/css/main.b5eb8f53.css",
+    "static/js/main.276bbcf1.js"
   ]
 }
